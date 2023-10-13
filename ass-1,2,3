@@ -1,0 +1,49 @@
+#Ass-1
+#To print the given year is leap year or not
+y=int(input('Enter the year:'))
+if (y%4==0 and y%100!=0) or(y%400==0):
+    print('Leap year')
+else:
+    print('Non-Leap year')
+#Ass-2
+#To prepare the shopping mall bill
+product1=100
+product2=200
+product3=300
+product4=400
+print('---Welcome to CMR Shopping mall---')
+cname=input('Enter customer name:')
+cphno=input('Enter Phno:')
+p1q=int(input('Enter the quantity of product1:'))
+p2q=int(input('Enter the quantity of product2:'))
+p3q=int(input('Enter the quantity of product3:'))
+p4q=int(input('Enter the quantity of product4:'))
+bill=(product1*p1q)+(product2*p2q)+(product3*p3q)+(product4*p4q)
+if bill>=2500:
+    disc=bill*25/100
+elif bill>=1500:
+    disc=bill*15/100
+elif bill>=1000:
+    disc=bill*10/100
+else:
+    disc=bill*5/100
+amt=bill-disc
+gst=amt*10/100
+totamt=amt+gst
+print('Customer name:',cname)
+print('Customer phno:',cphno)
+print('Bill         :',bill)
+print('Discount     :',disc)
+print('Gst 12%      :',gst)
+print('Total amount :',totamt)
+print('---Thank you!Visit Again---')
+
+#Ass-3
+n=int(input())
+if(n%2==0):
+    if(n>=2 and n<=5) or(n>20):
+        print('Not Weird')
+    elif(n>=6 and n<=20):
+        print('Weird')
+else:
+    print('Weird')
